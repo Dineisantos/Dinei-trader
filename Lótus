@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Dinei Trade 3D PRO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+  background: linear-gradient(to bottom right, #0f172a, #2563eb);
+  color: white;
+}
+button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+}
+</style>
+</head><body><h1>🚀 Dinei Trade 3D PRO</h1>
+<p id="sinal">Aguardando IA...</p><button onclick="rodar()">Iniciar IA</button>
+
+<script>
+function rodar(){
+  let sinais = [
+    "BTC 📈 CALL",
+    "BTC 📉 PUT",
+    "EUR/USD 📈 CALL",
+    "EUR/USD 📉 PUT"
+  ];
+
+  let s = sinais[Math.floor(Math.random()*sinais.length)];
+  document.getElementById("sinal").innerText = s + " - 70%";
+}
+</script></body>
+</html>
